@@ -184,8 +184,8 @@ def check_capabilities(entry, fetcher, result):
     result["crs"] = order_crs(list(dict.fromkeys(crs)), request_crs(entry))
     layer = requested_layer(entry)
     if layer and names:
-        missing = [l for l in layer.split(",") if l and l not in names and l.split(":")[-1] not in
-                   {n.split(":")[-1] for n in names}]
+        known = {n.split(":")[-1].lower() for n in names}
+        missing = [l for l in layer.split(",") if l and l.split(":")[-1].lower() not in known]
         if missing:
             result["warnings"].append("layer not in capabilities: %s" % ",".join(missing))
 
