@@ -233,8 +233,8 @@
 		  "title": "BE_3D_GRB_31370"
 		},
 	    	{
-		  "serverrequestprefix": "http://ros.datafeed.locationcentre.co.uk/geoserver/wms?&request=GetMap&VERSION=1.3.0&STYLES=CP.CadastralParcel&layers=CP.CadastralParcel&width=2000&height=2000&format=image/png&crs=EPSG:27700&bbox=",
-		  "getCapabilities": "http://ros.datafeed.locationcentre.co.uk/geoserver/wms?&request=GetCapabilities",
+		  "serverrequestprefix": "https://ros-inspire.themapcloud.com/maps/wms?service=WMS&request=GetMap&VERSION=1.3.0&STYLES=&layers=CP.CadastralParcel&width=2000&height=2000&format=image/png&crs=EPSG:27700&bbox=",
+		  "getCapabilities": "https://ros-inspire.themapcloud.com/maps/wms?service=WMS&request=GetCapabilities",
 		  "description": "Scotland WMS for Cadastral Parcels", 
 		  "service": "WMS",
 		  "title": "GB_Scotland_CadastralParcels_27700"
@@ -254,7 +254,7 @@
 		  "title": "BGTGETId"
 		},
 		{
-		  "serverrequestprefix": "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+		  "serverrequestprefix": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
 		  "getCapabilities": "",
 		  "description": "Open Street Map Tile Server",
 		  "service": "WMTS_TMS",
@@ -275,7 +275,7 @@
 		  "title": "ESRI worldtopoMap"
 		},
 		{
-		  "serverrequestprefix": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.png",
+		  "serverrequestprefix": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.png",
 		  "getCapabilities": "",
 		  "description": "ESRI World Aerial Photo Tile Server",
 		  "service": "WMTS_TMS",
