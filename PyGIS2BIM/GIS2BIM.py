@@ -57,11 +57,19 @@ def CreateDirectory(Directory):
         pass
     return Directory
 
+WebServerDataLocation = "https://raw.githubusercontent.com/DutchSailor/GIS2BIM/master/GIS2BIM_Data.json"
+_WebServerDataCache = {}
+
+def GetWebServerJSON():
+	#Download the list of GIS-servers & requests once per session, it is used for every server lookup
+	if WebServerDataLocation not in _WebServerDataCache:
+		url = urllib.request.urlopen(WebServerDataLocation)
+		_WebServerDataCache[WebServerDataLocation] = json.loads(url.read())
+	return _WebServerDataCache[WebServerDataLocation]
+
 def GetWebServerData(servertitle, category, parameter):
 	#Get webserverdata from github repository of GIS2BIM(up to date list of GIS-servers & requests)
-	Serverlocation = "https://raw.githubusercontent.com/DutchSailor/GIS2BIM/master/GIS2BIM_Data.json"
-	url = urllib.request.urlopen(Serverlocation)
-	data = json.loads(url.read())['GIS2BIMserversRequests'][category]
+	data = GetWebServerJSON()['GIS2BIMserversRequests'][category]
 	test = []
 	for i in data:
 		test.append(i["title"])
@@ -82,9 +90,7 @@ def xmldata(myurl, xPathStrings):
 
 def GetWebServerDataService(category,service):
 	#Get a list with webserverdata from github repository of GIS2BIM(up to date list of GIS-servers & requests)
-	Serverlocation = "https://raw.githubusercontent.com/DutchSailor/GIS2BIM/master/GIS2BIM_Data.json"
-	url = urllib.request.urlopen(Serverlocation)
-	data = json.loads(url.read())['GIS2BIMserversRequests'][category]
+	data = GetWebServerJSON()['GIS2BIMserversRequests'][category]
 	listOfData = []
 	for i in data:
 		if i["service"] == service:
