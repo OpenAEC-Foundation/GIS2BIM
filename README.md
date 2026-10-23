@@ -26,6 +26,30 @@ Installation is possible via the dynamo built-in package manager.
 
 -Directory nodes contains the versions of the package and the actual nodes
 
+## GIS web services
+`GIS2BIM_Data.json` holds the list of web services GIS2BIM uses (`GIS2BIMserversRequests.webserverRequests`); `GIS2BIM_Data_Categorised.json` holds the same services grouped per country and category. Besides the Dutch services the list contains public, keyless services of mapping agencies, cadastres, infrastructure authorities, geological surveys and cities worldwide. An overview per country is in [documentation/GIS_servers.md](documentation/GIS_servers.md).
+
+A request is built as `serverrequestprefix` + bounding box (`minx,miny,maxx,maxy` in the CRS of the request, easting first). WMS prefixes contain `width=3000&height=3000`, which GIS2BIM replaces with the requested image size; `WMTS_TMS` prefixes are XYZ tile templates in EPSG:3857.
+
+Every entry has the fields `serverrequestprefix`, `getCapabilities`, `description`, `service` and `title`. Entries are looked up by `title`, so titles are unique and never change. Newer entries also have:
+
+| Field | Meaning |
+|---|---|
+| `country` | ISO 3166-1 alpha-2 code, or `EU`, `AFRICA`, `GLOBAL` |
+| `coverage` | Area covered by the service |
+| `provider` | Organisation publishing the service |
+| `category` | `basemap`, `aerial`, `cadastre`, `buildings`, `buildings3d`, `roads`, `rail`, `water`, `structures`, `elevation`, `zoning`, `landcover`, `utilities`, `subsurface`, `protected`, `environment` or `admin` |
+| `crs` | Coordinate reference systems advertised by the service (CRS of the request first) |
+| `license`, `terms` | Licence as stated by the provider and a link to the licence or terms |
+| `cors` | Whether the server allows requests from web pages on other domains |
+| `testbbox` | Small bounding box with data, used to test the request (lon/lat for tile services) |
+| `maxzoom` | Highest zoom level of a tile service |
+| `verified` | Date of the last successful check |
+
+Service types: `WMS`, `WFS`/`WFS_curves`, `WCS` (1.0.0 GetCoverage), `WMTS_TMS`, `OGCAPI_Features`, `ArcGIS_MapServer`, `ArcGIS_FeatureServer` (only where no OGC service exists) and `Download`.
+
+Check the services with `python3 supportfiles/check_servers.py` (options: `--country DE`, `--title ...`, `--report report.json`). It requests every GetCapabilities document, performs the sample request with `testbbox` and reports CORS support.
+
 ## Help to develop GIS2BIM
 If you are interested in contributing to GIS2BIM, please let me know! You're most welcome.
 
