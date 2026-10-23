@@ -2,7 +2,7 @@
 
 Generated from `GIS2BIM_Data.json`. Every entry below was checked with `supportfiles/check_servers.py`: the GetCapabilities document was requested and a sample request (`serverrequestprefix` + `testbbox`) returned data. Column *CORS* tells whether the server allows browser requests from other origins. Only public services that need no API key are listed.
 
-745 services in 52 countries/regions (the original Dutch/Belgian entries without metadata are not listed here).
+743 services in 52 countries/regions (the original Dutch/Belgian entries without metadata are not listed here).
 
 | Country | Services |
 |---|---|
@@ -17,7 +17,7 @@ Generated from `GIS2BIM_Data.json`. Every entry below was checked with `supportf
 | Chile (CL) | 2 |
 | Colombia (CO) | 2 |
 | Czechia (CZ) | 11 |
-| Germany (DE) | 141 |
+| Germany (DE) | 139 |
 | Denmark (DK) | 9 |
 | Estonia (EE) | 13 |
 | Spain (ES) | 23 |
@@ -456,13 +456,11 @@ Generated from `GIS2BIM_Data.json`. Every entry below was checked with `supportf
 | `DE_SN_RAPIS_Bebauungsplaene_25833` | zoning | WMS | Saxony, Germany | Landesdirektion Sachsen, Raumordnungsinformationssystem RAPIS | [DL-DE/BY-2.0](https://www.rapis.sachsen.de/?ID=10572&art_param=765) | yes |
 | `DE_SN_LfULG_Bohrungen_25833` | subsurface | WFS | Saxony, Germany | Sächsisches Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG) | [DL-DE/BY-2.0](https://www.govdata.de/dl-de/by-2-0) | yes |
 | `DE_SN_LfULG_HQ100_25833` | environment | WFS | Saxony, Germany | Sächsisches Landesamt für Umwelt, Landwirtschaft und Geologie (LfULG) | [DL-DE/BY-2.0](https://www.govdata.de/dl-de/by-2-0) | yes |
-| `DE_ST_LVermGeo_DOP20_25832` | aerial | WMS | Saxony-Anhalt, Germany | Landesamt für Vermessung und Geoinformation Sachsen-Anhalt (LVermGeo) | [DL-DE/BY-2.0](https://www.lvermgeo.sachsen-anhalt.de/de/nutzungsbedingungen.html) | yes |
 | `DE_ST_LVermGeo_ALKIS_25832` | cadastre | WMS | Saxony-Anhalt, Germany | Landesamt für Vermessung und Geoinformation Sachsen-Anhalt (LVermGeo) | [DL-DE/BY-2.0](https://www.lvermgeo.sachsen-anhalt.de/de/nutzungsbedingungen.html) | yes |
 | `DE_ST_LVermGeo_ALKIS_Flurstueck_25832` | cadastre | WFS | Saxony-Anhalt, Germany | Landesamt für Vermessung und Geoinformation Sachsen-Anhalt (LVermGeo) | [DL-DE/BY-2.0](https://www.lvermgeo.sachsen-anhalt.de/de/nutzungsbedingungen.html) | yes |
 | `DE_ST_LVermGeo_ALKIS_Gebaeude_25832` | buildings | WFS | Saxony-Anhalt, Germany | Landesamt für Vermessung und Geoinformation Sachsen-Anhalt (LVermGeo) | [DL-DE/BY-2.0](https://www.lvermgeo.sachsen-anhalt.de/de/nutzungsbedingungen.html) | yes |
 | `DE_ST_LVermGeo_LoD2_INSPIRE_25832` | buildings3d | Download | Saxony-Anhalt, Germany | Landesamt für Vermessung und Geoinformation Sachsen-Anhalt (LVermGeo) | [DL-DE/BY-2.0](https://www.lvermgeo.sachsen-anhalt.de/de/nutzungsbedingungen.html) | yes |
 | `DE_ST_LVermGeo_DGM1_WCS_25832` | elevation | WCS | Saxony-Anhalt, Germany | Landesamt für Vermessung und Geoinformation Sachsen-Anhalt (LVermGeo) | [DL-DE/BY-2.0](https://www.govdata.de/dl-de/by-2-0) | yes |
-| `DE_ST_LVermGeo_DGM5_Hillshade_25832` | elevation | WMS | Saxony-Anhalt, Germany | Landesamt für Vermessung und Geoinformation Sachsen-Anhalt (LVermGeo) | [DL-DE/BY-2.0](https://www.lvermgeo.sachsen-anhalt.de/de/nutzungsbedingungen.html) | yes |
 | `DE_ST_ARIS_Bebauungsplaene_25832` | zoning | WMS | Saxony-Anhalt, Germany | Ministerium für Infrastruktur und Digitales Sachsen-Anhalt (MID), ARIS | [see terms](https://mid.sachsen-anhalt.de/infrastruktur/raumordnung-und-landesentwicklung/amtliches-raumordnungs-informationssystem/) | yes |
 | `DE_TH_TLBG_DOP20_25832` | aerial | WMS | Thuringia, Germany | Thüringer Landesamt für Bodenmanagement und Geoinformation (TLBG), GDI-Th | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | yes |
 | `DE_TH_TLBG_ALKIS_25832` | cadastre | WMS | Thuringia, Germany | Thüringer Landesamt für Bodenmanagement und Geoinformation (TLBG), GDI-Th | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | yes |

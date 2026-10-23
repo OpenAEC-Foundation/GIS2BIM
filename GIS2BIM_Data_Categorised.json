@@ -3205,23 +3205,6 @@
         "verified": "2026-10-24"
       },
       {
-        "serverrequestprefix": "https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_OpenData/guest?service=WMS&version=1.3.0&request=GetMap&layers=lsa_lvermgeo_dop20_2&styles=&width=3000&height=3000&format=image/png&crs=EPSG:25832&bbox=",
-        "getCapabilities": "https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DOP_WMS_OpenData/guest?service=WMS&version=1.3.0&request=GetCapabilities",
-        "description": "LVermGeo Saxony-Anhalt digital orthophotos (DOP20, 20 cm), Saxony-Anhalt",
-        "service": "WMS",
-        "title": "DE_ST_LVermGeo_DOP20_25832",
-        "country": "DE",
-        "coverage": "Saxony-Anhalt, Germany",
-        "provider": "Landesamt f\u00fcr Vermessung und Geoinformation Sachsen-Anhalt (LVermGeo)",
-        "category": "aerial",
-        "crs": ["EPSG:25832", "EPSG:4326", "EPSG:3857", "EPSG:4647", "EPSG:31468", "EPSG:31467", "EPSG:31469", "EPSG:25833", "EPSG:2397", "EPSG:2398", "EPSG:2399", "EPSG:2166", "EPSG:2167", "EPSG:2168"],
-        "license": "DL-DE/BY-2.0",
-        "terms": "https://www.lvermgeo.sachsen-anhalt.de/de/nutzungsbedingungen.html",
-        "cors": true,
-        "testbbox": "680100,5778520,680600,5779020",
-        "verified": "2026-10-24"
-      },
-      {
         "serverrequestprefix": "https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP?service=WMS&version=1.3.0&request=GetMap&layers=th_dop&styles=&width=3000&height=3000&format=image/png&crs=EPSG:25832&bbox=",
         "getCapabilities": "https://www.geoproxy.geoportal-th.de/geoproxy/services/DOP?service=WMS&version=1.3.0&request=GetCapabilities",
         "description": "TLBG Thuringia digital orthophotos (DOP20, 20 cm, colour), Thuringia",
@@ -4553,23 +4536,6 @@
         "crs": ["EPSG:25832"],
         "license": "DL-DE/BY-2.0",
         "terms": "https://www.govdata.de/dl-de/by-2-0",
-        "cors": true,
-        "testbbox": "680100,5778520,680600,5779020",
-        "verified": "2026-10-24"
-      },
-      {
-        "serverrequestprefix": "https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DGM5_Relief_OpenData/guest?service=WMS&version=1.3.0&request=GetMap&layers=lvermgeo_dgm5_schummerung&styles=&width=3000&height=3000&format=image/png&crs=EPSG:25832&bbox=",
-        "getCapabilities": "https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_DGM5_Relief_OpenData/guest?service=WMS&version=1.3.0&request=GetCapabilities",
-        "description": "LVermGeo Saxony-Anhalt hillshade of the 5 m digital terrain model (DGM5 Reliefschummerung), Saxony-Anhalt",
-        "service": "WMS",
-        "title": "DE_ST_LVermGeo_DGM5_Hillshade_25832",
-        "country": "DE",
-        "coverage": "Saxony-Anhalt, Germany",
-        "provider": "Landesamt f\u00fcr Vermessung und Geoinformation Sachsen-Anhalt (LVermGeo)",
-        "category": "elevation",
-        "crs": ["EPSG:25832", "EPSG:4326", "CRS:84", "EPSG:4258", "EPSG:31468", "EPSG:2398", "EPSG:25833", "EPSG:31467", "EPSG:31469", "EPSG:900913", "EPSG:2397", "EPSG:2399"],
-        "license": "DL-DE/BY-2.0",
-        "terms": "https://www.lvermgeo.sachsen-anhalt.de/de/nutzungsbedingungen.html",
         "cors": true,
         "testbbox": "680100,5778520,680600,5779020",
         "verified": "2026-10-24"
